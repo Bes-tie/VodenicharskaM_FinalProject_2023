@@ -101,17 +101,17 @@
 
         <TextBox TextWrapping="Wrap" 
                  Margin="1001,340,327,565"
-                 materialDesign:HintAssist.Hint="Enter your name:"
+                 materialDesign:HintAssist.Hint="Enter your username:"
                  FontFamily="Segoe UI Light"
                  Foreground="Black"
                  materialDesign:HintAssist.Foreground="#BDDFFF"
                  materialDesign:TextFieldAssist.UnderlineBrush="#BDDFFF"
                  Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
-                 FontSize="45"/>
+                 FontSize="45" TextChanged="TextBox_TextChanged"/>
 
         <TextBox TextWrapping="Wrap" 
                  Margin="1001,499,327,412"
-                 materialDesign:HintAssist.Hint="Enter your surname:"
+                 materialDesign:HintAssist.Hint="Enter your password:"
                  FontFamily="Segoe UI Light"
                  Foreground="Black"
                  materialDesign:HintAssist.Foreground="#BDDFFF"
@@ -121,7 +121,7 @@
 
         <TextBox TextWrapping="Wrap" 
                  Margin="1001,652,327,259"
-                 materialDesign:HintAssist.Hint="Enter your email:"
+                 materialDesign:HintAssist.Hint="Renter your password:"
                  FontFamily="Segoe UI Light"
                  Foreground="Black"
                  materialDesign:HintAssist.Foreground="#BDDFFF"

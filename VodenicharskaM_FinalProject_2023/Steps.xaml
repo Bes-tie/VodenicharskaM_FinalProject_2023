@@ -78,7 +78,7 @@
                 Height="60"
                 Foreground="Black"
                 BorderBrush="{x:Null}"
-                Background="Transparent"/>
+                Background="Transparent" Click="Button_Click_3"/>
 
         <Button Content="Calendar" 
             Margin="1546,41,203,963"
@@ -87,11 +87,11 @@
             Height="60"
             Foreground="Black"
             BorderBrush="{x:Null}"
-            Background="Transparent"/>
+            Background="Transparent" Click="Button_Click_2"/>
 
         <Button Content="Steps" 
             Margin="1409,35,379,959"
-            FontFamily="Segoe UI Light"
+            FontFamily="Segoe UI Semibold"
             FontSize="20"
             Height="70"
             Foreground="Black"
@@ -105,16 +105,16 @@
             Height="60"
             Foreground="Black"
             BorderBrush="{x:Null}"
-            Background="Transparent"/>
+            Background="Transparent" Click="Button_Click_1"/>
 
         <Button Content="Browse Jewelry" 
             Margin="898,36,747,958"
-            FontFamily="Segoe UI Semibold"
+            FontFamily="Segoe UI Light"
             FontSize="20"
             Height="70"
             Foreground="Black"
             BorderBrush="{x:Null}"
-            Background="Transparent"/>
+            Background="Transparent" Click="Button_Click"/>
 
     </Grid>
 </Window>

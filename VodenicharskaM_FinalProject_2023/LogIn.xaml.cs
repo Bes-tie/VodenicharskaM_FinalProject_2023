@@ -17,6 +17,18 @@ namespace VodenicharskaM_FinalProject_2023
 {
     public partial class LogIn : Window
     {
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            BrJewl logCont = new BrJewl();
+            logCont.Show();
+            this.Close();
+        }
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            SignUp signCont = new SignUp();
+            signCont.Show();
+            this.Close();
+        }
     }
 }

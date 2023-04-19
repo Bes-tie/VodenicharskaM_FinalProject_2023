@@ -13,15 +13,13 @@ using System.Windows.Shapes;
 namespace VodenicharskaM_FinalProject_2023
 {
     /// <summary>
-    /// Interaction logic for SignYp.xaml
+    /// Interaction logic for SuccessOrd.xaml
     /// </summary>
-    public partial class SignUp : Window
+    public partial class SuccessOrd : Window
     {
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public SuccessOrd()
         {
-            BrJewl signCont = new BrJewl();
-            signCont.Show();
-            this.Close();
+            InitializeComponent();
         }
     }
 }

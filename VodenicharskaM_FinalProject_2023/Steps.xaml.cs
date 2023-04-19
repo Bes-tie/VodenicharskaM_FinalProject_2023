@@ -15,11 +15,39 @@ namespace VodenicharskaM_FinalProject_2023
     /// <summary>
     /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Steps : Window
     {
-        public Window1()
+        public Steps()
         {
+            InitializeComponent();
+        }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            BrJewl win1 = new BrJewl();
+            win1.Show();
+            this.Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            BrO win1 = new BrO();
+            win1.Show();
+            this.Close();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Calendar win1 = new Calendar();
+            win1.Show();
+            this.Close();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Order win1 = new Order();
+            win1.Show();
+            this.Close();
         }
     }
 }

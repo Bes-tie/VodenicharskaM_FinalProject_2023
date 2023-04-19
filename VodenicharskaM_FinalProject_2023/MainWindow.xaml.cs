@@ -21,5 +21,12 @@ namespace VodenicharskaM_FinalProject_2023
         {
             InitializeComponent();
         }
+
+        private void MainCont_Click(object sender, RoutedEventArgs e)
+        {
+            LogIn log = new LogIn();
+            log.Show();
+            this.Close();
+        }
     }
 }

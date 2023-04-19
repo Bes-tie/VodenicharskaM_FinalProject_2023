@@ -98,7 +98,7 @@
                 FontSize="30"
                 FontFamily="Segoe UI Light"
                 FontWeight="Bold"
-                Foreground="Black"/>
+                Foreground="Black" Click="Button_Click"/>
 
         <TextBlock Text="Don't have an account yet? Click below to create one!" 
                    TextWrapping="Wrap"
@@ -119,7 +119,7 @@
                 FontSize="30"
                 FontFamily="Segoe UI Light"
                 FontWeight="Bold"
-                Foreground="Black"/>
+                Foreground="Black" Click="Button_Click_1"/>
 
         <Rectangle Stroke="Black" 
                    Margin="958,407,960,163"

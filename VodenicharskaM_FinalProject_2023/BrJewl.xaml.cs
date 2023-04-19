@@ -21,5 +21,33 @@ namespace VodenicharskaM_FinalProject_2023
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            BrO win1 = new BrO();
+            win1.Show();
+            this.Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Steps win1 = new Steps();
+            win1.Show();
+            this.Close();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Calendar win1 = new Calendar();
+            win1.Show();
+            this.Close();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Order win1 = new Order();
+            win1.Show();
+            this.Close();
+        }
     }
 }

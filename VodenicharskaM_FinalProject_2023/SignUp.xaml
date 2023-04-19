@@ -107,7 +107,7 @@
                  materialDesign:HintAssist.Foreground="#BDDFFF"
                  materialDesign:TextFieldAssist.UnderlineBrush="#BDDFFF"
                  Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
-                 FontSize="45" TextChanged="TextBox_TextChanged"/>
+                 FontSize="45"/>
 
         <TextBox TextWrapping="Wrap" 
                  Margin="1001,499,327,412"
@@ -138,7 +138,7 @@
                 FontSize="30"
                 FontFamily="Segoe UI Light"
                 FontWeight="Bold"
-                Foreground="Black"/>
+                Foreground="Black" Click="Button_Click"/>
 
         <Rectangle Stroke="Black" 
                    Margin="959,340,960,230"

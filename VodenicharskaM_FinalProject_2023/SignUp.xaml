@@ -69,7 +69,8 @@
                Margin="0,234,0,0" 
                VerticalAlignment="Top"/>
 
-        <TextBox TextWrapping="Wrap" 
+        <TextBox x:Name="txtName"
+                 TextWrapping="Wrap" 
                  Margin="304,340,1024,565"
                  materialDesign:HintAssist.Hint="Enter your name:"
                  FontFamily="Segoe UI Light"
@@ -79,7 +80,8 @@
                  Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
                  FontSize="45"/>
 
-        <TextBox TextWrapping="Wrap" 
+        <TextBox x:Name="txtSurname"
+                 TextWrapping="Wrap" 
                  Margin="304,499,1024,412"
                  materialDesign:HintAssist.Hint="Enter your surname:"
                  FontFamily="Segoe UI Light"
@@ -89,7 +91,8 @@
                  Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
                  FontSize="45"/>
 
-        <TextBox TextWrapping="Wrap" 
+        <TextBox x:Name="txtEmail"
+                 TextWrapping="Wrap" 
                  Margin="304,652,1024,259"
                  materialDesign:HintAssist.Hint="Enter your email:"
                  FontFamily="Segoe UI Light"
@@ -99,7 +102,8 @@
                  Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
                  FontSize="45"/>
 
-        <TextBox TextWrapping="Wrap" 
+        <TextBox x:Name="txtUser"
+                 TextWrapping="Wrap" 
                  Margin="1001,340,327,565"
                  materialDesign:HintAssist.Hint="Enter your username:"
                  FontFamily="Segoe UI Light"
@@ -109,24 +113,22 @@
                  Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
                  FontSize="45"/>
 
-        <TextBox TextWrapping="Wrap" 
+        <PasswordBox x:Name="pass"
                  Margin="1001,499,327,412"
                  materialDesign:HintAssist.Hint="Enter your password:"
                  FontFamily="Segoe UI Light"
                  Foreground="Black"
                  materialDesign:HintAssist.Foreground="#BDDFFF"
                  materialDesign:TextFieldAssist.UnderlineBrush="#BDDFFF"
-                 Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
                  FontSize="45"/>
 
-        <TextBox TextWrapping="Wrap" 
+        <PasswordBox x:Name="passRep"
                  Margin="1001,652,327,259"
                  materialDesign:HintAssist.Hint="Renter your password:"
                  FontFamily="Segoe UI Light"
                  Foreground="Black"
                  materialDesign:HintAssist.Foreground="#BDDFFF"
                  materialDesign:TextFieldAssist.UnderlineBrush="#BDDFFF"
-                 Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
                  FontSize="45"/>
 
         <Button Content="Sign Up" 

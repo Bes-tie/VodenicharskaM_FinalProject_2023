@@ -131,7 +131,7 @@
                Margin="751,290,0,0" 
                VerticalAlignment="Top"/>
 
-        <DataGrid Margin="402,478,402,160" SelectionChanged="DataGrid_SelectionChanged">
+        <DataGrid Margin="402,478,402,160">
             
         </DataGrid>
 

@@ -5,11 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VodenicharskaM_FinalProject_2023"
         mc:Ignorable="d"
-        Title="Steps" Height="1080" Width="1920" Background="#ECF8FF">
+        Title="Steps" Height="810" Width="1440" Background="#ECF8FF">
     <Grid>
         <Ellipse HorizontalAlignment="Left" 
+                 Height="400" 
+                 Margin="-291,0,0,0" 
+                 Stroke="Black" 
+                 VerticalAlignment="Center" 
+                 Width="400"
+                 Fill="#CEECFF"
+                 StrokeThickness="0"/>
+
+        <Ellipse HorizontalAlignment="Left" 
                  Height="600" 
-                 Margin="-330,266,0,0" 
+                 Margin="1258,266,0,0" 
                  Stroke="Black" 
                  VerticalAlignment="Top" 
                  Width="600"
@@ -17,18 +26,9 @@
                  StrokeThickness="0"/>
 
         <Ellipse HorizontalAlignment="Left" 
-                 Height="800" 
-                 Margin="1633,620,0,0" 
-                 Stroke="Black" 
-                 VerticalAlignment="Top" 
-                 Width="800"
-                 Fill="#CEECFF"
-                 StrokeThickness="0"/>
-
-        <Ellipse HorizontalAlignment="Left" 
-                 Height="225" 
-                 Width="225"
-                 Margin="1633,454,0,0" 
+                 Height="125" 
+                 Width="125"
+                 Margin="1284,197,0,0" 
                  Stroke="Black" 
                  VerticalAlignment="Top"
                  Fill="#BDDFFF"
@@ -37,23 +37,23 @@
         <Ellipse HorizontalAlignment="Left" 
                  Height="100" 
                  Width="100"
-                 Margin="342,954,0,0" 
+                 Margin="10,602,0,0" 
                  Stroke="Black" 
                  VerticalAlignment="Top"
                  Fill="#CEECFF"
                  StrokeThickness="0"/>
 
         <Ellipse HorizontalAlignment="Left" 
-                 Height="400" 
-                 Width="400"
-                 Margin="0,994,0,0" 
+                 Height="200" 
+                 Width="200"
+                 Margin="67,702,0,0" 
                  Stroke="Black" 
                  VerticalAlignment="Top"
                  Fill="#BDDFFF"
                  StrokeThickness="0"/>
 
         <Rectangle Fill="#CEECFF"
-                   Margin="-84,-148,0,916"
+                   Margin="-129,-96,0,671"
                    RadiusX="100"
                    RadiusY="100"/>
 
@@ -72,7 +72,7 @@
                VerticalAlignment="Top"/>
 
         <Button Content="Order" 
-                Margin="1694,41,62,963"
+                Margin="1296,23,39,711"
                 FontFamily="Segoe UI Light"
                 FontSize="20"
                 Height="60"
@@ -81,7 +81,7 @@
                 Background="Transparent" Click="Button_Click_3"/>
 
         <Button Content="Calendar" 
-            Margin="1546,41,203,963"
+            Margin="1178,24,149,710"
             FontFamily="Segoe UI Light"
             FontSize="20"
             Height="60"
@@ -90,31 +90,32 @@
             Background="Transparent" Click="Button_Click_2"/>
 
         <Button Content="Steps" 
-            Margin="1409,35,379,959"
+            Margin="1068,23,272,711"
             FontFamily="Segoe UI Semibold"
             FontSize="20"
-            Height="70"
+            Height="60"
+            Width="100"
             Foreground="Black"
             BorderBrush="{x:Null}"
-            Background="Transparent"/>
+            Background="Transparent" Click="Button_Click_1"/>
 
         <Button Content="Browse Other" 
-            Margin="1173,40,530,964"
+            Margin="903,24,377,710"
             FontFamily="Segoe UI Light"
             FontSize="20"
             Height="60"
             Foreground="Black"
             BorderBrush="{x:Null}"
-            Background="Transparent" Click="Button_Click_1"/>
+            Background="Transparent" Click="Button_Click"/>
 
         <Button Content="Browse Jewelry" 
-            Margin="898,36,747,958"
+            Margin="720,23,537,711"
             FontFamily="Segoe UI Light"
             FontSize="20"
-            Height="70"
+            Height="60"
             Foreground="Black"
             BorderBrush="{x:Null}"
-            Background="Transparent" Click="Button_Click"/>
+            Background="Transparent"/>
 
     </Grid>
 </Window>

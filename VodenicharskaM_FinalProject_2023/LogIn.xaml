@@ -6,16 +6,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VodenicharskaM_FinalProject_2023"
         mc:Ignorable="d"
-        Title="LogIn" Height="1080" Width="1920" Background="#ECF8FF">
-    
+        Title="LogIn" Height="810" Width="1440" Background="#ECF8FF">
+
     <Grid Margin="0,0,0,0">
 
         <Ellipse HorizontalAlignment="Left" 
-                 Height="600" 
-                 Margin="-272,-244,0,0" 
+                 Height="440" 
+                 Margin="-240,-202,0,0" 
                  Stroke="Black" 
                  VerticalAlignment="Top" 
-                 Width="600"
+                 Width="440"
                  Fill="#CEECFF"
                  StrokeThickness="0"/>
 
@@ -59,71 +59,76 @@
                FontFamily="Gabriola"
                FontSize="100"
                HorizontalAlignment="Center" 
-               Margin="0,108,0,0" 
+               Margin="0,42,0,0" 
                VerticalAlignment="Top"/>
 
         <Label Content="Fine jewelry, Restoration and Conservation" 
                FontFamily="Segoe UI Light"
                FontSize="50"
                HorizontalAlignment="Center" 
-               Margin="0,291,0,0" 
+               Margin="0,189,0,0" 
                VerticalAlignment="Top"/>
 
-        <TextBox TextWrapping="Wrap" 
-                 Margin="240,407,1088,498"
+        <TextBox x:Name="txtUser"
+                 TextWrapping="Wrap" 
+                 Margin="200,310,800,362"
                  materialDesign:HintAssist.Hint="Enter username:"
                  FontFamily="Segoe UI Light"
                  Foreground="Black"
                  materialDesign:HintAssist.Foreground="#BDDFFF"
                  materialDesign:TextFieldAssist.UnderlineBrush="#BDDFFF"
                  Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
-                 FontSize="45"/>
+                 FontSize="25"
+                 Width="440"/>
 
-        <TextBox TextWrapping="Wrap" 
-                 Margin="240,571,1088,340"
+        <PasswordBox x:Name="pass"
+                 Margin="200,443,800,249"
                  materialDesign:HintAssist.Hint="Enter password:"
                  FontFamily="Segoe UI Light"
                  Foreground="Black"
                  materialDesign:HintAssist.Foreground="#BDDFFF"
                  materialDesign:TextFieldAssist.UnderlineBrush="#BDDFFF"
-                 Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
-                 FontSize="45"/>
+                 Style="{DynamicResource MaterialDesignFloatingHintPasswordBox}"
+                 FontSize="25"
+                 Width="440"/>
 
         <Button Content="Log In" 
-                Margin="386,776,1234,208" 
-                BorderBrush="Black"
+                Margin="278,619,878,0" 
+                BorderBrush="#BDDFFF"
                 BorderThickness="1"
                 Background="#BDDFFF"
-                Height="80"
-                FontSize="30"
+                VerticalAlignment="Top"
+                FontSize="25"
+                Height="100"
                 FontFamily="Segoe UI Light"
-                FontWeight="Bold"
-                Foreground="Black" Click="Button_Click"/>
+                Foreground="Black" 
+                Click="Button_Click"/>
 
         <TextBlock Text="Don't have an account yet? Click below to create one!" 
                    TextWrapping="Wrap"
                    TextAlignment="Center"
                    FontFamily="Segoe UI Light"
-                   FontSize="50"
+                   FontSize="30"
                    HorizontalAlignment="Left" 
-                   Margin="1082,467,0,0"
+                   Margin="877,383,0,0"
                    VerticalAlignment="Top" 
-                   Width="505"/>
+                   Width="312"/>
 
         <Button Content="Sign Up" 
-                Margin="1185,776,436,208" 
-                BorderBrush="Black"
+                Margin="905,619,251,0" 
+                BorderBrush="#BDDFFF"
                 BorderThickness="1"
                 Background="#BDDFFF"
-                Height="80"
-                FontSize="30"
+                VerticalAlignment="Top"
+                FontSize="25"
+                Height="100"
                 FontFamily="Segoe UI Light"
-                FontWeight="Bold"
-                Foreground="Black" Click="Button_Click_1"/>
+                Foreground="Black"
+                Click="Button_Click_1"/>
 
         <Rectangle Stroke="Black" 
-                   Margin="958,407,960,163"
-                   Width="5"/>
+                   VerticalAlignment="Top"
+                   Margin="735,310,702,0" Height="279"/>
 
     </Grid>
 </Window>

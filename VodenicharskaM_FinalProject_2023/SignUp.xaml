@@ -6,13 +6,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VodenicharskaM_FinalProject_2023"
         mc:Ignorable="d"
-        Title="LogIn" Height="1080" Width="1920" Background="#ECF8FF">
+        Title="LogIn" Height="810" Width="1440" Background="#ECF8FF">
 
     <Grid Margin="0,0,0,0">
 
         <Ellipse HorizontalAlignment="Left" 
-                 Height="600" 
+                 Height="515" 
                  Margin="-272,-244,0,0" 
+                 Stroke="Black" 
+                 VerticalAlignment="Top" 
+                 Width="515"
+                 Fill="#CEECFF"
+                 StrokeThickness="0"/>
+
+        <Ellipse HorizontalAlignment="Left" 
+                 Height="600" 
+                 Margin="1213,404,0,0" 
                  Stroke="Black" 
                  VerticalAlignment="Top" 
                  Width="600"
@@ -20,18 +29,9 @@
                  StrokeThickness="0"/>
 
         <Ellipse HorizontalAlignment="Left" 
-                 Height="800" 
-                 Margin="1633,620,0,0" 
-                 Stroke="Black" 
-                 VerticalAlignment="Top" 
-                 Width="800"
-                 Fill="#CEECFF"
-                 StrokeThickness="0"/>
-
-        <Ellipse HorizontalAlignment="Left" 
-                 Height="225" 
-                 Width="225"
-                 Margin="1633,454,0,0" 
+                 Height="130" 
+                 Width="130"
+                 Margin="1278,301,0,0" 
                  Stroke="Black" 
                  VerticalAlignment="Top"
                  Fill="#BDDFFF"
@@ -40,7 +40,7 @@
         <Ellipse HorizontalAlignment="Left" 
                  Height="100" 
                  Width="100"
-                 Margin="342,954,0,0" 
+                 Margin="223,652,0,0" 
                  Stroke="Black" 
                  VerticalAlignment="Top"
                  Fill="#CEECFF"
@@ -49,7 +49,7 @@
         <Ellipse HorizontalAlignment="Left" 
                  Height="400" 
                  Width="400"
-                 Margin="0,994,0,0" 
+                 Margin="-157,652,0,0" 
                  Stroke="Black" 
                  VerticalAlignment="Top"
                  Fill="#BDDFFF"
@@ -59,92 +59,106 @@
                FontFamily="Gabriola"
                FontSize="100"
                HorizontalAlignment="Center" 
-               Margin="0,56,0,0" 
+               Margin="0,40,0,0" 
                VerticalAlignment="Top"/>
 
         <Label Content="Fine jewelry, Restoration and Conservation" 
                FontFamily="Segoe UI Light"
                FontSize="50"
                HorizontalAlignment="Center" 
-               Margin="0,234,0,0" 
+               Margin="0,188,0,0" 
                VerticalAlignment="Top"/>
 
         <TextBox x:Name="txtName"
                  TextWrapping="Wrap" 
-                 Margin="304,340,1024,565"
+                 Margin="221,286,779,405"
                  materialDesign:HintAssist.Hint="Enter your name:"
                  FontFamily="Segoe UI Light"
                  Foreground="Black"
                  materialDesign:HintAssist.Foreground="#BDDFFF"
                  materialDesign:TextFieldAssist.UnderlineBrush="#BDDFFF"
                  Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
-                 FontSize="45"/>
+                 FontSize="25"
+                 Width="440"/>
 
         <TextBox x:Name="txtSurname"
                  TextWrapping="Wrap" 
-                 Margin="304,499,1024,412"
+                 Margin="221,393,779,302"
                  materialDesign:HintAssist.Hint="Enter your surname:"
                  FontFamily="Segoe UI Light"
                  Foreground="Black"
                  materialDesign:HintAssist.Foreground="#BDDFFF"
                  materialDesign:TextFieldAssist.UnderlineBrush="#BDDFFF"
                  Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
-                 FontSize="45"/>
+                 FontSize="25"
+                 Width="440"/>
 
         <TextBox x:Name="txtEmail"
                  TextWrapping="Wrap" 
-                 Margin="304,652,1024,259"
+                 Margin="221,496,779,192"
                  materialDesign:HintAssist.Hint="Enter your email:"
                  FontFamily="Segoe UI Light"
                  Foreground="Black"
                  materialDesign:HintAssist.Foreground="#BDDFFF"
                  materialDesign:TextFieldAssist.UnderlineBrush="#BDDFFF"
                  Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
-                 FontSize="45"/>
+                 FontSize="25"
+                 Width="440"/>
 
         <TextBox x:Name="txtUser"
                  TextWrapping="Wrap" 
-                 Margin="1001,340,327,565"
+                 Margin="812,286,188,405"
                  materialDesign:HintAssist.Hint="Enter your username:"
                  FontFamily="Segoe UI Light"
                  Foreground="Black"
                  materialDesign:HintAssist.Foreground="#BDDFFF"
                  materialDesign:TextFieldAssist.UnderlineBrush="#BDDFFF"
                  Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
-                 FontSize="45"/>
+                 FontSize="25"
+                 Width="440"/>
 
         <PasswordBox x:Name="pass"
-                 Margin="1001,499,327,412"
+                 Margin="812,0,188,304"
                  materialDesign:HintAssist.Hint="Enter your password:"
                  FontFamily="Segoe UI Light"
                  Foreground="Black"
                  materialDesign:HintAssist.Foreground="#BDDFFF"
                  materialDesign:TextFieldAssist.UnderlineBrush="#BDDFFF"
-                 FontSize="45"/>
+                 Style="{DynamicResource MaterialDesignFloatingHintPasswordBox}"
+                 VerticalAlignment="Bottom"
+                 FontSize="25"
+                 Width="440" Height="69"/>
 
         <PasswordBox x:Name="passRep"
-                 Margin="1001,652,327,259"
+                 Margin="812,0,188,192"
                  materialDesign:HintAssist.Hint="Renter your password:"
                  FontFamily="Segoe UI Light"
                  Foreground="Black"
                  materialDesign:HintAssist.Foreground="#BDDFFF"
                  materialDesign:TextFieldAssist.UnderlineBrush="#BDDFFF"
-                 FontSize="45"/>
+                 Style="{DynamicResource MaterialDesignFloatingHintPasswordBox}"
+                 VerticalAlignment="Bottom"
+                 FontSize="25"
+                 Height="76"
+                 Width="440"/>
 
         <Button Content="Sign Up" 
-                Margin="811,902,810,82" 
-                BorderBrush="Black"
+                Margin="596,639,560,45" 
+                BorderBrush="#BDDFFF"
                 BorderThickness="1"
                 Background="#BDDFFF"
-                Height="80"
-                FontSize="30"
+                VerticalAlignment="Top"
+                FontSize="25"
+                Height="100"
                 FontFamily="Segoe UI Light"
-                FontWeight="Bold"
-                Foreground="Black" Click="Button_Click"/>
+                Foreground="Black"
+                Click="Button_Click"/>
 
         <Rectangle Stroke="Black" 
-                   Margin="959,340,960,230"
-                   Width="1"/>
+                   Fill="Black"
+                   Margin="737,286,702,188"
+                   Width="1"
+                   Height="320"/>
 
     </Grid>
 </Window>

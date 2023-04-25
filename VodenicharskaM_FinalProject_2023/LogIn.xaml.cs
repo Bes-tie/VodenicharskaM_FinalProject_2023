@@ -20,7 +20,7 @@ namespace VodenicharskaM_FinalProject_2023
     {
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-                SqlConnection con = new SqlConnection(@"Data Source = DESKTOP-SDEJ6HG; Initial Catalog=Mivoski; Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source = DESKTOP-SDEJ6HG; Initial Catalog=Mivoski; Integrated Security=True");
 
             try
             {

@@ -10,7 +10,7 @@
 
     <ScrollViewer CanContentScroll="True" 
                       VerticalScrollBarVisibility="Visible">
-        <Grid>
+        <Grid Height="1256">
             <Ellipse HorizontalAlignment="Left" 
                  Height="400" 
                  Margin="-180,155,0,0" 
@@ -57,7 +57,7 @@
                  StrokeThickness="0"/>
 
             <Rectangle Fill="#CEECFF"
-                   Margin="-121,-224,-8,1063"
+                   Margin="-121,-224,-8,1132"
                    RadiusX="100"
                    RadiusY="100"/>
 
@@ -76,7 +76,7 @@
                VerticalAlignment="Top"/>
 
             <Button Content="Order" 
-                Margin="1258,27,51,1097"
+                Margin="1253,36,56,1160"
                 FontFamily="Segoe UI Light"
                 FontSize="20"
                 Height="60"
@@ -85,7 +85,7 @@
                 Background="Transparent" Click="Button_Click_3"/>
 
             <Button Content="Calendar" 
-            Margin="1113,27,165,1097"
+            Margin="1108,36,170,1160"
             FontFamily="Segoe UI Semibold"
             FontSize="20"
             Height="60"
@@ -94,7 +94,7 @@
             Background="Transparent" Click="Button_Click_2"/>
 
             <Button Content="Steps" 
-            Margin="1008,28,302,1096"
+            Margin="1003,37,307,1159"
             FontFamily="Segoe UI Light"
             FontSize="20"
             Height="60"
@@ -103,7 +103,7 @@
             Background="Transparent" Click="Button_Click_1"/>
 
             <Button Content="Browse Other" 
-            Margin="842,27,415,1097"
+            Margin="837,36,420,1160"
             FontFamily="Segoe UI Light"
             FontSize="20"
             Height="60"
@@ -112,7 +112,7 @@
             Background="Transparent" Click="Button_Click"/>
 
             <Button Content="Browse Jewelry" 
-            Margin="646,27,581,1097"
+            Margin="641,36,586,1160"
             FontFamily="Segoe UI Light"
             FontSize="20"
             Height="60"
@@ -144,16 +144,20 @@
                    Height="82"
                    Width="984" Margin="225,325,0,0"/>
 
-            <Calendar HorizontalAlignment="Left" 
+            <Calendar x:Name="calendar"
+                HorizontalAlignment="Left" 
                   Margin="729,443,0,0" 
                   VerticalAlignment="Top"
-                  Width="480" 
-                  Height="480"
-                  FontFamily="Segoe UI Light"/>
+                  Width="450" 
+                  Height="450"
+                  FontFamily="Segoe UI Light"
+                  FirstDayOfWeek="Monday"
+                  IsTodayHighlighted="True"
+                  SelectedDatesChanged="Calendar_SelectedDatesChanged"/>
 
             <TextBox x:Name="txtUser"
                  TextWrapping="Wrap" 
-                 Margin="260,443,723,648"
+                 Margin="260,443,723,716"
                  materialDesign:HintAssist.Hint="Enter your username:"
                  FontFamily="Segoe UI Light"
                  Foreground="Black"
@@ -161,12 +165,13 @@
                  materialDesign:TextFieldAssist.UnderlineBrush="#BDDFFF"
                  Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
                  FontSize="25"
-                 Width="440" TextChanged="txtUser_TextChanged"/>
+                 Width="440" 
+                 TextChanged="txtUser_TextChanged"/>
 
-            <TextBox x:Name="txtTime"
+            <TextBox x:Name="txtName"
                  TextWrapping="Wrap" 
-                 Margin="260,654,723,434"
-                 materialDesign:HintAssist.Hint="Enter the time of your appoinment:"
+                 Margin="260,639,723,521"
+                 materialDesign:HintAssist.Hint="Your name:"
                  FontFamily="Segoe UI Light"
                  Foreground="Black"
                  materialDesign:HintAssist.Foreground="#BDDFFF"
@@ -176,7 +181,7 @@
                  Width="440"/>
 
             <PasswordBox x:Name="pass"
-                 Margin="260,555,723,548"
+                 Margin="260,549,723,622"
                  materialDesign:HintAssist.Hint="Enter password:"
                  FontFamily="Segoe UI Light"
                  Foreground="Black"
@@ -186,8 +191,43 @@
                  FontSize="25"
                  Width="440"/>
 
+            <TextBox x:Name="txtSurname"
+                TextWrapping="Wrap" 
+                Margin="260,740,723,431"
+                materialDesign:HintAssist.Hint="Your surname:"
+                FontFamily="Segoe UI Light"
+                Foreground="Black"
+                materialDesign:HintAssist.Foreground="#BDDFFF"
+                materialDesign:TextFieldAssist.UnderlineBrush="#BDDFFF"
+                Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
+                FontSize="25"
+                Width="440"/>
+
+            <TextBox x:Name="txtTime"
+                TextWrapping="Wrap" 
+                Margin="260,838,723,328"
+                materialDesign:HintAssist.Hint="Enter the time of your appoinment:"
+                FontFamily="Segoe UI Light"
+                Foreground="Black"
+                materialDesign:HintAssist.Foreground="#BDDFFF"
+                materialDesign:TextFieldAssist.UnderlineBrush="#BDDFFF"
+                Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
+                FontSize="25"
+                Width="440"/>
+
+            <TextBox x:Name="txtPurp"
+                TextWrapping="Wrap" 
+                Margin="260,933,194,209"
+                materialDesign:HintAssist.Hint="Enter the purpose of your appoinment (Optional):"
+                FontFamily="Segoe UI Light"
+                Foreground="Black"
+                materialDesign:HintAssist.Foreground="#BDDFFF"
+                materialDesign:TextFieldAssist.UnderlineBrush="#BDDFFF"
+                Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
+                FontSize="25"/>
+
             <Button Content="Confirm Appointment" 
-                    Margin="292,786,768,0"
+                    Margin="537,1084,525,0"
                     BorderBrush="#BDDFFF"
                     BorderThickness="1"
                     Background="#BDDFFF"
@@ -195,7 +235,7 @@
                     FontSize="25"
                     Height="100"
                     FontFamily="Segoe UI Light"
-                    Foreground="Black"/>
+                    Foreground="Black" Click="Button_Click_4"/>
         </Grid>
     </ScrollViewer>
 </Window>

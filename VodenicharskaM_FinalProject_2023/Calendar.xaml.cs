@@ -22,48 +22,6 @@ namespace VodenicharskaM_FinalProject_2023
         public Calendar()
         {
             InitializeComponent();
-
-            SqlConnection con = new SqlConnection(@"Data Source = DESKTOP-SDEJ6HG; Initial Catalog=Mivoski; Integrated Security=True");
-
-            try
-            {
-                con.Open();
-                string query = "SELECT * FROM Customers Where Username=@Username and Password=@Password";
-                SqlCommand sqlCmd = new SqlCommand(query, con);
-                sqlCmd.CommandType = CommandType.Text;
-                sqlCmd.Parameters.AddWithValue("@Username", txtUser.Text);
-                sqlCmd.Parameters.AddWithValue("@Password", pass.Password);
-
-                int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
-                if (count == 1)
-                {
-                    MainWindow dashboard = new MainWindow();
-                    MessageBox.Show("Welcome, {0}!", txtUser.Text);
-                    BrJewl logCont = new BrJewl();
-                    logCont.Show();
-                    this.Close();
-                }
-
-                string query2 = "INSERT * INTO Appointments(username,password,time)vaues'" + this.txtUser.Text + "','" + this.pass.Password + "','" + this.txtTime.Text + "')";
-                SqlCommand cmd = new SqlCommand(query, con);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Your appointment has been saved!");
-
-                else
-                {
-                    MessageBox.Show("Username or password are not correct!");
-                }
-
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                con.Close();
-            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -96,7 +54,84 @@ namespace VodenicharskaM_FinalProject_2023
 
         private void txtUser_TextChanged(object sender, TextChangedEventArgs e)
         {
+            SqlConnection con = new SqlConnection(@"Data Source = LABSCIFIPC02\LOCALHOST; Initial Catalog=MV_FinalProject_DB; Integrated Security=True");
 
+
+            try
+            {
+                con.Open();
+                string query = "SELECT name,surname from Customers where username = '" + txtUser.Text + "'";
+                SqlCommand cmd = new SqlCommand(query, con);
+
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = query;
+                cmd.Parameters.AddWithValue("@username", txtUser.Text);
+                cmd.ExecuteNonQuery();
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+
+                    txtName.Text = reader["name"].ToString();
+                    txtSurname.Text = reader["surname"].ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        private void Calendar_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
+        {
+            txtTime.Text = calendar.SelectedDate.ToString();
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            SqlConnection con1 = new SqlConnection(@"Data Source = LABSCIFIPC02\LOCALHOST; Initial Catalog=MV_FinalProject_DB; Integrated Security=True");
+
+            try
+            {
+                con1.Open();
+                string query = "INSERT INTO Appointments(username,name,surname,time,purpose)values ('" + this.txtUser.Text + "','" + this.txtName.Text + "','" + this.txtSurname.Text + "','" + this.txtTime.Text + "','" + this.txtPurp.Text + "') ";
+                SqlCommand cmd = new SqlCommand(query, con1);
+                cmd.ExecuteNonQuery();
+
+                //data verification
+                if (con1.State == ConnectionState.Closed)
+                    con1.Open();
+                string query1 = "SELECT COUNT(1) FROM SignUpTable_ Where Username=@Username and Password=@Password";
+                SqlCommand sqlCmd = new SqlCommand(query, con1);
+                sqlCmd.CommandType = CommandType.Text;
+                sqlCmd.Parameters.AddWithValue("@Username", txtUser.Text);
+                sqlCmd.Parameters.AddWithValue("@Password", pass.Password);
+
+                int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
+                if (count == 1)
+                {
+                    MessageBox.Show("Your appointment has been successfully saved!");
+                }
+                else
+                {
+                    MessageBox.Show("Username or password are not correct!");
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            finally
+            {
+                con1.Close();
+            }
         }
     }
 }

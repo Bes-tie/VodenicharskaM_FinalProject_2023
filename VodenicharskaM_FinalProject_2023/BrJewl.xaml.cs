@@ -44,11 +44,5 @@ namespace VodenicharskaM_FinalProject_2023
             this.Close();
         }
 
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-            Order win1 = new Order();
-            win1.Show();
-            this.Close();
-        }
     }
 }

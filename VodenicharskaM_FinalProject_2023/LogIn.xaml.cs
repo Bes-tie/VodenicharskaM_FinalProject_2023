@@ -59,8 +59,8 @@ namespace VodenicharskaM_FinalProject_2023
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            SignUp signCont = new SignUp();
-            signCont.Show();
+            SignUp s = new SignUp();
+            s.Show();
             this.Close();
         }
     }

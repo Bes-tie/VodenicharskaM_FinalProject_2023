@@ -5,18 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VodenicharskaM_FinalProject_2023" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="BrJewl" Height="810" Width="1440" Background="#ECF8FF">
-    <Grid>
-        <Ellipse HorizontalAlignment="Left" 
+        Title="BrJewl" Height="800" Width="1440" Background="#ECF8FF">
+    <ScrollViewer>
+        <Grid>
+            <Ellipse HorizontalAlignment="Left" 
                  Height="400" 
-                 Margin="-209,0,0,0" 
+                 Margin="-147,296,0,0" 
                  Stroke="Black" 
-                 VerticalAlignment="Center" 
+                 VerticalAlignment="Top" 
                  Width="400"
                  Fill="#CEECFF"
                  StrokeThickness="0"/>
 
-        <Ellipse HorizontalAlignment="Left" 
+            <Ellipse HorizontalAlignment="Left" 
                  Height="600" 
                  Margin="1258,266,0,0" 
                  Stroke="Black" 
@@ -25,7 +26,7 @@
                  Fill="#CEECFF"
                  StrokeThickness="0"/>
 
-        <Ellipse HorizontalAlignment="Left" 
+            <Ellipse HorizontalAlignment="Left" 
                  Height="125" 
                  Width="125"
                  Margin="1284,197,0,0" 
@@ -34,180 +35,380 @@
                  Fill="#BDDFFF"
                  StrokeThickness="0"/>
 
-        <Ellipse HorizontalAlignment="Left" 
+            <Ellipse HorizontalAlignment="Left" 
                  Height="80" 
                  Width="80"
-                 Margin="113,566,0,0" 
+                 Margin="87,869,0,0" 
                  Stroke="Black" 
                  VerticalAlignment="Top"
                  Fill="#CEECFF"
                  StrokeThickness="0"/>
 
-        <Ellipse HorizontalAlignment="Left" 
+            <Ellipse HorizontalAlignment="Left" 
                  Height="300" 
                  Width="300"
-                 Margin="-83,652,0,0" 
+                 Margin="-147,949,0,0" 
                  Stroke="Black" 
                  VerticalAlignment="Top"
                  Fill="#BDDFFF"
                  StrokeThickness="0"/>
 
-        <Rectangle Fill="#CEECFF"
-                   Margin="-129,-96,0,671"
-                   RadiusX="100"
-                   RadiusY="100"/>
+            <Ellipse HorizontalAlignment="Left" 
+                     Height="400" 
+                     Margin="1258,1247,0,0" 
+                     Stroke="Black" 
+                     VerticalAlignment="Top" 
+                     Width="400"
+                     Fill="#CEECFF"
+                     StrokeThickness="0"/>
 
-        <Label Content="M  I  V  O  S  K  I" 
-               FontFamily="Gabriola"
-               FontSize="50"
-               HorizontalAlignment="Left" 
-               Margin="38,7,0,0" 
-               VerticalAlignment="Top"/>
+            <Ellipse HorizontalAlignment="Left" 
+                     Height="125" 
+                     Width="125"
+                     Margin="1133,1522,0,0" 
+                     Stroke="Black" 
+                     VerticalAlignment="Top"
+                     Fill="#BDDFFF"
+                     StrokeThickness="0"/>
 
-        <Label Content="Fine jewelry, Restoration and Conservation" 
-               FontFamily="Segoe UI Light"
-               FontSize="15"
-               HorizontalAlignment="Left" 
-               Margin="30,74,0,0" 
-               VerticalAlignment="Top"/>
+            <Ellipse HorizontalAlignment="Left" 
+                     Height="125" 
+                     Width="125"
+                     Margin="105,1247,0,0" 
+                     Stroke="Black" 
+                     VerticalAlignment="Top"
+                     Fill="#BDDFFF"
+                     StrokeThickness="0"/>
 
-        <Button Content="Order" 
-                Margin="1296,23,39,711"
-                FontFamily="Segoe UI Light"
-                FontSize="20"
-                Height="60"
-                Foreground="Black"
-                BorderBrush="{x:Null}"
-                Background="Transparent" Click="Button_Click_3"/>
+            <Rectangle Fill="#CEECFF"
+                       Margin="-129,-111,0,1747"
+                       RadiusX="100"
+                       RadiusY="100"/>
 
-        <Button Content="Calendar" 
-            Margin="1178,24,149,710"
-            FontFamily="Segoe UI Light"
-            FontSize="20"
-            Height="60"
-            Foreground="Black"
-            BorderBrush="{x:Null}"
-            Background="Transparent" Click="Button_Click_2"/>
+            <Label Content="M  I  V  O  S  K  I" 
+                   FontFamily="Gabriola"
+                   FontSize="50"
+                   HorizontalAlignment="Left" 
+                   Margin="38,7,0,0" 
+                   VerticalAlignment="Top"/>
 
-        <Button Content="Steps" 
-            Margin="1068,23,272,711"
-            FontFamily="Segoe UI Light"
-            FontSize="20"
-            Height="60"
-            Width="100"
-            Foreground="Black"
-            BorderBrush="{x:Null}"
-            Background="Transparent" Click="Button_Click_1"/>
+            <Label Content="Fine jewelry, Restoration and Conservation" 
+                   FontFamily="Segoe UI Light"
+                   FontSize="15"
+                   HorizontalAlignment="Left" 
+                   Margin="30,74,0,0" 
+                   VerticalAlignment="Top"/>
 
-        <Button Content="Browse Other" 
-            Margin="903,24,377,710"
-            FontFamily="Segoe UI Light"
-            FontSize="20"
-            Height="60"
-            Foreground="Black"
-            BorderBrush="{x:Null}"
-            Background="Transparent" Click="Button_Click"/>
-
-        <Button Content="Browse Jewelry" 
-            Margin="720,23,537,711"
-            FontFamily="Segoe UI Semibold"
-            FontSize="20"
-            Height="60"
-            Foreground="Black"
-            BorderBrush="{x:Null}"
-            Background="Transparent"/>
-
-        <Label Content="M  I  V  O  S  K  I" 
+            <Label Content="M  I  V  O  S  K  I" 
                FontFamily="Gabriola"
                FontSize="70"
-               HorizontalAlignment="Center" 
-               Margin="0,151,0,0" 
+               HorizontalAlignment="Left" 
+               Margin="538,155,0,0" 
                VerticalAlignment="Top" Height="147"/>
 
-        <Label Content="Fine jewelry, Restoration and Conservation" 
+            <Label Content="Fine jewelry, Restoration and Conservation" 
                FontFamily="Segoe UI Light"
                FontSize="30"
                HorizontalAlignment="Left" 
                Margin="447,254,0,0" 
                VerticalAlignment="Top"/>
 
-        <Image Source="C:\Users\Dell Latitude 7400\Downloads\IMG_20220110_175640.jpg"
-            Margin="262,370,875,155" 
+            <Image Source="C:\Users\Dell Latitude 7400\Downloads\IMG_20220110_175640.jpg"
+            Margin="268,253,859,1055" 
             RenderTransformOrigin="0.5,0.5">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
 
-        <Image Source="C:\Users\Dell Latitude 7400\Downloads\IMG_20221205_164656.jpg" 
+            <Image Source="C:\Users\Dell Latitude 7400\Downloads\IMG_20221205_164656.jpg" 
                RenderTransformOrigin="0.5,0.5" 
-               Margin="577,375,553,163">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-        <Image Source="C:\Users\Dell Latitude 7400\Downloads\IMG_20230201_154443.jpg" 
-               Margin="877,386,238,168" RenderTransformOrigin="0.5,0.5">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
+               Margin="595,206,557,1041">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="C:\Users\Dell Latitude 7400\Downloads\IMG_20230201_154443.jpg" 
+               Margin="900,275,225,1084" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
 
-        <Rectangle HorizontalAlignment="Left" 
+            <Rectangle HorizontalAlignment="Left" 
                    Height="40" 
-                   Margin="300,656,0,0" 
+                   Margin="304,656,0,0" 
                    Stroke="Transparent" 
                    VerticalAlignment="Top" 
-                   Width="227"
+                   Width="224"
                    Fill="#CEECFF"/>
 
-        <TextBlock Text="Solar System Necklace"
+            <TextBlock Text="Solar System Necklace"
                    TextWrapping="Wrap"
-                   Margin="308,664,922,106"
-                    FontFamily="Segoe UI Light"
-                    FontSize="15"/>
+                   TextAlignment="Center"
+                   Margin="319,666,911,1140"
+                   FontFamily="Segoe UI Light"
+                   FontSize="15"/>
 
-        <Rectangle HorizontalAlignment="Left"
+            <Rectangle HorizontalAlignment="Left"
                    Height="40" 
-            Margin="614,656,0,0" 
+                   Margin="629,656,0,0" 
+                   Stroke="Transparent" 
+                   VerticalAlignment="Top" 
+                   Width="204"
+                   Fill="#CEECFF"/>
+
+            <TextBlock Text="Heart-Shaped Pendant"
+                   TextWrapping="Wrap"
+                   TextAlignment="Center"
+                   Margin="629,664,590,1137"
+                   FontFamily="Segoe UI Light"
+                   FontSize="15"/>
+
+            <Rectangle HorizontalAlignment="Left" 
+                   Height="40" 
+            Margin="936,656,0,0" 
+            Stroke="Transparent" 
+            VerticalAlignment="Top" 
+            Width="226"
+            Fill="#CEECFF"/>
+
+            <TextBlock Text="Ring with Black Pearls"
+                   TextWrapping="Wrap"
+                   TextAlignment="Center"
+                   Margin="945,664,261,1193"
+                   FontFamily="Segoe UI Light"
+                   FontSize="15"/>
+
+            <Image Source="C:\Users\Dell Latitude 7400\Downloads\IMG_20220418_105611.jpg"
+            Margin="269,653,861,691" 
+            RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image Source="C:\Users\Dell Latitude 7400\Downloads\IMG_20221214_155848 (1).jpg" 
+            RenderTransformOrigin="0.5,0.5" 
+            Margin="616,863,575,800">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image Source="C:\Users\Dell Latitude 7400\Downloads\IMG_20230329_113320 (1).jpg" 
+            Margin="896,613,208,648" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Rectangle HorizontalAlignment="Left" 
+            Height="40" 
+            Margin="304,1037,0,0" 
+            Stroke="Transparent" 
+            VerticalAlignment="Top" 
+            Width="223"
+            Fill="#CEECFF"/>
+
+            <TextBlock Text="Ametist Cross Pendant"
+            TextWrapping="Wrap"
+            TextAlignment="Center"
+            Margin="305,1047,896,757"
+            FontFamily="Segoe UI Light"
+            FontSize="15"/>
+
+            <Rectangle HorizontalAlignment="Left"
+            Height="40" 
+            Margin="614,1037,0,0" 
             Stroke="Transparent" 
             VerticalAlignment="Top" 
             Width="236"
             Fill="#CEECFF"/>
 
-        <TextBlock Text="Heart-Shaped Pendant"
+            <TextBlock Text="Inwardly Curved Ring"
             TextWrapping="Wrap"
-            Margin="624,663,602,108"
+            TextAlignment="Center"
+            Margin="616,1047,575,769"
             FontFamily="Segoe UI Light"
             FontSize="15"/>
 
-        <Rectangle HorizontalAlignment="Left" 
-                   Height="40" 
-            Margin="919,656,0,0" 
+            <Rectangle HorizontalAlignment="Left" 
+            Height="40" 
+            Margin="935,1043,0,0" 
             Stroke="Transparent" 
             VerticalAlignment="Top" 
-            Width="241"
+            Width="242"
             Fill="#CEECFF"/>
 
-        <TextBlock Text="Ring with Black Pearls"
+            <TextBlock Text="Bracelet with Snails"
             TextWrapping="Wrap"
-            Margin="927,663,290,108"
+            TextAlignment="Center"
+            Margin="945,1050,254,800"
             FontFamily="Segoe UI Light"
             FontSize="15"/>
-    </Grid>
+
+            <Image Source="C:\Users\Dell Latitude 7400\Downloads\IMG-20230408-WA0001.jpg"
+            Margin="300,1139,896,414" 
+            RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image Source="C:\Users\Dell Latitude 7400\Downloads\IMG_20210921_150422 (1).jpg" 
+            RenderTransformOrigin="0.5,0.5" 
+            Margin="576,1045,540,306">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image Source="C:\Users\Dell Latitude 7400\Downloads\IMG_20210415_110420_4 (1).jpg" 
+            Margin="936,1136,249,412" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Rectangle HorizontalAlignment="Left" 
+            Height="40" 
+            Margin="300,1427,0,0" 
+            Stroke="Transparent" 
+            VerticalAlignment="Top" 
+            Width="227"
+            Fill="#CEECFF"/>
+
+            <TextBlock Text="Lava Ring"
+            TextWrapping="Wrap"
+            TextAlignment="Center"
+            Margin="300,1437,896,404"
+            FontFamily="Segoe UI Light"
+            FontSize="15"/>
+
+            <Rectangle HorizontalAlignment="Left"
+            Height="40" 
+            Margin="613,1427,0,0" 
+            Stroke="Transparent" 
+            VerticalAlignment="Top" 
+            Width="232"
+            Fill="#CEECFF"/>
+
+            <TextBlock Text="Necklace with a Circular Pedant"
+            TextWrapping="Wrap"
+            TextAlignment="Center"
+            Margin="616,1434,578,419"
+            FontFamily="Segoe UI Light"
+            FontSize="15"/>
+
+            <Rectangle HorizontalAlignment="Left" 
+            Height="40" 
+            Margin="935,1427,0,0" 
+            Stroke="Transparent" 
+            VerticalAlignment="Top" 
+            Width="240"
+            Fill="#CEECFF"/>
+
+            <TextBlock Text="Half Circle Pendant"
+            TextWrapping="Wrap"
+            TextAlignment="Center"
+            Margin="939,1434,249,419"
+            FontFamily="Segoe UI Light"
+            FontSize="15"/>
+            
+            <Button Content="Order" 
+                Margin="1258,36,51,1781"
+                FontFamily="Segoe UI Light"
+                FontSize="20"
+                Height="60"
+                Foreground="Black"
+                BorderBrush="{x:Null}"
+                Background="Transparent"/>
+            
+            <Button Content="Calendar" 
+                Margin="1113,36,165,1781"
+                FontFamily="Segoe UI Light"
+                FontSize="20"
+                Height="60"
+                Foreground="Black"
+                BorderBrush="{x:Null}"
+                Background="Transparent" 
+                Click="Button_Click_2"/>
+            
+            <Button Content="Products" 
+                Margin="1008,37,302,1780"
+                FontFamily="Segoe UI Light"
+                FontSize="20"
+                Height="60"
+                Foreground="Black"
+                BorderBrush="{x:Null}"
+                Background="Transparent" 
+                Click="Button_Click_1"/>
+            
+            <Button Content="Browse Other" 
+                Margin="842,36,415,1781"
+                FontFamily="Segoe UI Light"
+                FontSize="20"
+                Height="60"
+                Foreground="Black"
+                BorderBrush="{x:Null}"
+                Background="Transparent" 
+                Click="Button_Click"/>
+            
+            <Button Content="Browse Jewelry" 
+                Margin="646,36,581,1781"
+                FontFamily="Segoe UI Semivold"
+                FontSize="20"
+                Height="60"
+                Foreground="Black"
+                BorderBrush="{x:Null}"
+                Background="Transparent" 
+                RenderTransformOrigin="0.491,0.534"/>
+        </Grid>
+    </ScrollViewer>
 </Window>

@@ -5,19 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VodenicharskaM_FinalProject_2023"
         mc:Ignorable="d"
-        Title="BrO" Height="810" Width="1440" Background="#ECF8FF">
+        Title="BrO" Height="800" Width="1440" Background="#ECF8FF">
 
-    <Grid>
-        <Ellipse HorizontalAlignment="Left" 
+    <ScrollViewer>
+        <Grid>
+            <Ellipse HorizontalAlignment="Left" 
                  Height="400" 
-                 Margin="-291,0,0,0" 
+                 Margin="-170,266,0,0" 
                  Stroke="Black" 
-                 VerticalAlignment="Center" 
+                 VerticalAlignment="Top" 
                  Width="400"
                  Fill="#CEECFF"
                  StrokeThickness="0"/>
 
-        <Ellipse HorizontalAlignment="Left" 
+            <Ellipse HorizontalAlignment="Left" 
                  Height="600" 
                  Margin="1258,266,0,0" 
                  Stroke="Black" 
@@ -26,7 +27,7 @@
                  Fill="#CEECFF"
                  StrokeThickness="0"/>
 
-        <Ellipse HorizontalAlignment="Left" 
+            <Ellipse HorizontalAlignment="Left" 
                  Height="125" 
                  Width="125"
                  Margin="1284,197,0,0" 
@@ -35,54 +36,80 @@
                  Fill="#BDDFFF"
                  StrokeThickness="0"/>
 
-        <Ellipse HorizontalAlignment="Left" 
-                 Height="100" 
-                 Width="100"
-                 Margin="10,602,0,0" 
+            <Ellipse HorizontalAlignment="Left" 
+                 Height="80" 
+                 Width="80"
+                 Margin="87,869,0,0" 
                  Stroke="Black" 
                  VerticalAlignment="Top"
                  Fill="#CEECFF"
                  StrokeThickness="0"/>
 
-        <Ellipse HorizontalAlignment="Left" 
-                 Height="200" 
-                 Width="200"
-                 Margin="67,702,0,0" 
+            <Ellipse HorizontalAlignment="Left" 
+                 Height="300" 
+                 Width="300"
+                 Margin="-147,949,0,0" 
                  Stroke="Black" 
                  VerticalAlignment="Top"
                  Fill="#BDDFFF"
                  StrokeThickness="0"/>
 
-        <Rectangle Fill="#CEECFF"
-                   Margin="-129,-96,0,671"
+            <Ellipse HorizontalAlignment="Left" 
+                     Height="400" 
+                     Margin="1258,1247,0,0" 
+                     Stroke="Black" 
+                     VerticalAlignment="Top" 
+                     Width="400"
+                     Fill="#CEECFF"
+                     StrokeThickness="0"/>
+
+            <Ellipse HorizontalAlignment="Left" 
+                     Height="125" 
+                     Width="125"
+                     Margin="1133,1522,0,0" 
+                     Stroke="Black" 
+                     VerticalAlignment="Top"
+                     Fill="#BDDFFF"
+                     StrokeThickness="0"/>
+
+            <Ellipse HorizontalAlignment="Left" 
+                     Height="125" 
+                     Width="125"
+                     Margin="105,1247,0,0" 
+                     Stroke="Black" 
+                     VerticalAlignment="Top"
+                     Fill="#BDDFFF"
+                     StrokeThickness="0"/>
+            <Rectangle Fill="#CEECFF"
+                   Margin="-129,-96,0,1601"
                    RadiusX="100"
                    RadiusY="100"/>
 
-        <Label Content="M  I  V  O  S  K  I" 
+            <Label Content="M  I  V  O  S  K  I" 
                FontFamily="Gabriola"
                FontSize="50"
                HorizontalAlignment="Left" 
                Margin="38,7,0,0" 
                VerticalAlignment="Top"/>
 
-        <Label Content="Fine jewelry, Restoration and Conservation" 
+            <Label Content="Fine jewelry, Restoration and Conservation" 
                FontFamily="Segoe UI Light"
                FontSize="15"
                HorizontalAlignment="Left" 
                Margin="30,74,0,0" 
                VerticalAlignment="Top"/>
 
-        <Button Content="Order" 
-                Margin="1296,23,39,711"
+            <Button Content="Order" 
+                Margin="1284,28,51,1639"
                 FontFamily="Segoe UI Light"
                 FontSize="20"
                 Height="60"
                 Foreground="Black"
                 BorderBrush="{x:Null}"
-                Background="Transparent" Click="Button_Click_3"/>
+                Background="Transparent"/>
 
-        <Button Content="Calendar" 
-            Margin="1178,24,149,710"
+            <Button Content="Calendar" 
+            Margin="1156,29,126,1638"
             FontFamily="Segoe UI Light"
             FontSize="20"
             Height="60"
@@ -90,18 +117,17 @@
             BorderBrush="{x:Null}"
             Background="Transparent" Click="Button_Click_2"/>
 
-        <Button Content="Steps" 
-            Margin="1068,23,272,711"
+            <Button Content="Products" 
+            Margin="1051,36,255,1648"
             FontFamily="Segoe UI Light"
             FontSize="20"
             Height="60"
-            Width="100"
             Foreground="Black"
             BorderBrush="{x:Null}"
             Background="Transparent" Click="Button_Click_1"/>
 
-        <Button Content="Browse Other" 
-            Margin="903,24,377,710"
+            <Button Content="Browse Other" 
+            Margin="879,29,384,1638"
             FontFamily="Segoe UI Semibold"
             FontSize="20"
             Height="60"
@@ -109,8 +135,8 @@
             BorderBrush="{x:Null}"
             Background="Transparent" Click="Button_Click"/>
 
-        <Button Content="Browse Jewelry" 
-            Margin="720,23,537,711"
+            <Button Content="Browse Jewelry" 
+            Margin="687,28,549,1639"
             FontFamily="Segoe UI Light"
             FontSize="20"
             Height="60"
@@ -119,19 +145,267 @@
             Background="Transparent"/>
 
 
-        <Label Content="M  I  V  O  S  K  I" 
+            <Label Content="M  I  V  O  S  K  I" 
                FontFamily="Gabriola"
                FontSize="70"
                HorizontalAlignment="Center" 
                Margin="0,151,0,0" 
                VerticalAlignment="Top" Height="147"/>
 
-        <Label Content="Fine jewelry, Restoration and Conservation" 
+            <Label Content="Fine jewelry, Restoration and Conservation" 
                FontFamily="Segoe UI Light"
                FontSize="30"
                HorizontalAlignment="Left" 
                Margin="447,254,0,0" 
                VerticalAlignment="Top"/>
 
-    </Grid>
+            <Image Source="C:\Users\Dell Latitude 7400\Downloads\IMG_20220209_135116.jpg"
+            Margin="228,241,903,1002" 
+            RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image Source="C:\Users\Dell Latitude 7400\Downloads\IMG_20220218_214646.jpg" 
+            RenderTransformOrigin="0.533,0.499" 
+            Margin="556,269,575,1041">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform X="-8.874" Y="10.134"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image Source="C:\Users\Dell Latitude 7400\Downloads\IMG_20220729_172007.jpg" 
+            Margin="859,249,256,1006" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Rectangle HorizontalAlignment="Left" 
+            Height="40" 
+            Margin="264,624,0,0" 
+            Stroke="Transparent" 
+            VerticalAlignment="Top" 
+            Width="220"
+            Fill="#CEECFF"/>
+
+            <TextBlock
+            TextWrapping="Wrap"
+            TextAlignment="Center"
+            Margin="270,632,945,1069"
+            FontFamily="Segoe UI Light"
+            FontSize="15"><Run Text="Restored "/><Run Text="Candleholder  "/>
+            </TextBlock>
+            <Rectangle HorizontalAlignment="Left"
+            Height="40" 
+            Margin="594,624,0,0" 
+            Stroke="Transparent" 
+            VerticalAlignment="Top" 
+            Width="218"
+            Fill="#CEECFF"/>
+
+            <TextBlock Text="Restored Pafta"
+            TextWrapping="Wrap"
+            TextAlignment="Center"
+            Margin="594,632,611,1069"
+            FontFamily="Segoe UI Light"
+            FontSize="15"/>
+
+            <Rectangle HorizontalAlignment="Left" 
+            Height="40" 
+            Margin="895,624,0,0" 
+            Stroke="Transparent" 
+            VerticalAlignment="Top" 
+            Width="234"
+            Fill="#CEECFF"/>
+
+            <TextBlock Text="Restored Church Ornament"
+            TextWrapping="Wrap"
+            TextAlignment="Center"
+            Margin="898,632,294,1063"
+            FontFamily="Segoe UI Light"
+            FontSize="15"/>
+
+            <Image Source="C:\Users\Dell Latitude 7400\Downloads\IMG_20221212_152308.jpg"
+            Margin="214,624,908,619" 
+            RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image Source="C:\Users\Dell Latitude 7400\Downloads\IMG_20230127_134415.jpg" 
+            RenderTransformOrigin="0.533,0.499" 
+            Margin="545,655,587,637">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform X="-8.874" Y="10.134"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image Source="C:\Users\Dell Latitude 7400\Downloads\IMG_20230131_130603.jpg" 
+            Margin="862,632,262,626" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Rectangle HorizontalAlignment="Left" 
+            Height="40" 
+            Margin="251,1016,0,0" 
+            Stroke="Transparent" 
+            VerticalAlignment="Top" 
+            Width="227"
+            Fill="#CEECFF"/>
+
+            <TextBlock
+            TextWrapping="Wrap"
+            TextAlignment="Center"
+            Margin="258,1021,958,681"
+            FontFamily="Segoe UI Light"
+            FontSize="15" Text="Silver Beer Mug"/>
+
+            <Rectangle HorizontalAlignment="Left"
+            Height="40" 
+            Margin="580,1017,0,0" 
+            Stroke="Transparent" 
+            VerticalAlignment="Top" 
+            Width="222"
+            Fill="#CEECFF"/>
+
+            <TextBlock Text="Walnut and Silver Ashtray"
+            TextWrapping="Wrap"
+            TextAlignment="Center"
+            Margin="598,1025,639,681"
+            FontFamily="Segoe UI Light"
+            FontSize="15"/>
+
+            <Rectangle HorizontalAlignment="Left" 
+            Height="40" 
+            Margin="898,1017,0,0" 
+            Stroke="Transparent" 
+            VerticalAlignment="Top" 
+            Width="224"
+            Fill="#CEECFF"/>
+
+            <TextBlock Text="Restored Gold and Silver Goblet"
+            TextWrapping="Wrap"
+            TextAlignment="Center"
+            Margin="908,1020,307,681"
+            FontFamily="Segoe UI Light"
+            FontSize="15"/>
+
+            <Image Source="C:\Users\Dell Latitude 7400\Downloads\IMG_20210813_170319.jpg"
+            Margin="206,1012,903,225" 
+            RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image Source="C:\Users\Dell Latitude 7400\Downloads\IMG_20210323_133716_5.jpg" 
+            RenderTransformOrigin="0.533,0.499" 
+            Margin="596,1101,621,314">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform X="-8.874" Y="10.134"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image Source="C:\Users\Dell Latitude 7400\OneDrive\Pictures\IMG_20230108_192258cop.jpg" 
+            Margin="907,1090,307,325" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Rectangle HorizontalAlignment="Left" 
+            Height="40" 
+            Margin="243,1398,0,0" 
+            Stroke="Transparent" 
+            VerticalAlignment="Top" 
+            Width="239"
+            Fill="#CEECFF"/>
+
+            <TextBlock
+            TextWrapping="Wrap"
+            TextAlignment="Center"
+            Margin="258,1408,958,313"
+            FontFamily="Segoe UI Light"
+            FontSize="15" Text="Restored Church Ornament"/>
+
+            <Rectangle HorizontalAlignment="Left"
+            Height="40" 
+            Margin="585,1398,0,0" 
+            Stroke="Transparent" 
+            VerticalAlignment="Top" 
+            Width="211"
+            Fill="#CEECFF"/>
+
+            <TextBlock Text="Golden Brooch with Stones"
+            TextWrapping="Wrap"
+            TextAlignment="Center"
+            Margin="594,1406,642,313"
+            FontFamily="Segoe UI Light"
+            FontSize="15"/>
+            <Rectangle HorizontalAlignment="Left" 
+            Height="40" 
+            Margin="906,1398,0,0" 
+            Stroke="Transparent" 
+            VerticalAlignment="Top" 
+            Width="212"
+            Fill="#CEECFF"/>
+
+            <TextBlock Text="Replica of a Golden Brooch"
+            TextWrapping="Wrap"
+            TextAlignment="Center"
+            Margin="908,1406,306,313"
+            FontFamily="Segoe UI Light"
+            FontSize="15"/>
+        </Grid>
+    </ScrollViewer>
 </Window>

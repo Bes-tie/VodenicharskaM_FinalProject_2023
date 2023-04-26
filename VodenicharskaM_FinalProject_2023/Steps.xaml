@@ -6,17 +6,18 @@
         xmlns:local="clr-namespace:VodenicharskaM_FinalProject_2023"
         mc:Ignorable="d"
         Title="Steps" Height="810" Width="1440" Background="#ECF8FF">
-    <Grid>
-        <Ellipse HorizontalAlignment="Left" 
+    <ScrollViewer>
+        <Grid Margin="0,0,0,-166" Height="1106">
+            <Ellipse HorizontalAlignment="Left" 
                  Height="400" 
-                 Margin="-291,0,0,0" 
+                 Margin="-240,166,0,0" 
                  Stroke="Black" 
-                 VerticalAlignment="Center" 
+                 VerticalAlignment="Top" 
                  Width="400"
                  Fill="#CEECFF"
                  StrokeThickness="0"/>
 
-        <Ellipse HorizontalAlignment="Left" 
+            <Ellipse HorizontalAlignment="Left" 
                  Height="600" 
                  Margin="1258,266,0,0" 
                  Stroke="Black" 
@@ -25,7 +26,7 @@
                  Fill="#CEECFF"
                  StrokeThickness="0"/>
 
-        <Ellipse HorizontalAlignment="Left" 
+            <Ellipse HorizontalAlignment="Left" 
                  Height="125" 
                  Width="125"
                  Margin="1284,197,0,0" 
@@ -34,7 +35,7 @@
                  Fill="#BDDFFF"
                  StrokeThickness="0"/>
 
-        <Ellipse HorizontalAlignment="Left" 
+            <Ellipse HorizontalAlignment="Left" 
                  Height="100" 
                  Width="100"
                  Margin="10,602,0,0" 
@@ -43,45 +44,45 @@
                  Fill="#CEECFF"
                  StrokeThickness="0"/>
 
-        <Ellipse HorizontalAlignment="Left" 
+            <Ellipse HorizontalAlignment="Left" 
                  Height="200" 
                  Width="200"
-                 Margin="67,702,0,0" 
+                 Margin="-40,808,0,0" 
                  Stroke="Black" 
                  VerticalAlignment="Top"
                  Fill="#BDDFFF"
                  StrokeThickness="0"/>
 
-        <Rectangle Fill="#CEECFF"
-                   Margin="-129,-96,0,671"
+            <Rectangle Fill="#CEECFF"
+                   Margin="-129,-96,0,985"
                    RadiusX="100"
                    RadiusY="100"/>
 
-        <Label Content="M  I  V  O  S  K  I" 
+            <Label Content="M  I  V  O  S  K  I" 
                FontFamily="Gabriola"
                FontSize="50"
                HorizontalAlignment="Left" 
                Margin="38,7,0,0" 
                VerticalAlignment="Top"/>
 
-        <Label Content="Fine jewelry, Restoration and Conservation" 
+            <Label Content="Fine jewelry, Restoration and Conservation" 
                FontFamily="Segoe UI Light"
                FontSize="15"
                HorizontalAlignment="Left" 
                Margin="30,74,0,0" 
                VerticalAlignment="Top"/>
 
-        <Button Content="Order" 
-                Margin="1296,23,39,711"
+            <Button Content="Order" 
+                Margin="1284,36,51,1010"
                 FontFamily="Segoe UI Light"
                 FontSize="20"
                 Height="60"
                 Foreground="Black"
                 BorderBrush="{x:Null}"
-                Background="Transparent" Click="Button_Click_3"/>
+                Background="Transparent"/>
 
-        <Button Content="Calendar" 
-            Margin="1178,24,149,710"
+            <Button Content="Calendar" 
+            Margin="1163,37,144,1009"
             FontFamily="Segoe UI Light"
             FontSize="20"
             Height="60"
@@ -89,18 +90,17 @@
             BorderBrush="{x:Null}"
             Background="Transparent" Click="Button_Click_2"/>
 
-        <Button Content="Steps" 
-            Margin="1068,23,272,711"
+            <Button Content="Products" 
+            Margin="1029,36,275,1010"
             FontFamily="Segoe UI Semibold"
             FontSize="20"
             Height="60"
-            Width="100"
             Foreground="Black"
             BorderBrush="{x:Null}"
             Background="Transparent" Click="Button_Click_1"/>
 
-        <Button Content="Browse Other" 
-            Margin="903,24,377,710"
+            <Button Content="Browse Other" 
+            Margin="852,37,407,1009"
             FontFamily="Segoe UI Light"
             FontSize="20"
             Height="60"
@@ -108,8 +108,8 @@
             BorderBrush="{x:Null}"
             Background="Transparent" Click="Button_Click"/>
 
-        <Button Content="Browse Jewelry" 
-            Margin="720,23,537,711"
+            <Button Content="Browse Jewelry" 
+            Margin="681,36,576,1010"
             FontFamily="Segoe UI Light"
             FontSize="20"
             Height="60"
@@ -117,5 +117,45 @@
             BorderBrush="{x:Null}"
             Background="Transparent"/>
 
-    </Grid>
+            <Button Content="Load" 
+                    Margin="411,436,373,0"
+                    BorderBrush="#BDDFFF"
+                    BorderThickness="1"
+                    Background="#BDDFFF"
+                    VerticalAlignment="Top"
+                    FontSize="25"
+                    Height="68"
+                    FontFamily="Segoe UI Light"
+                    Foreground="Black" Click="Button_Click_3"/>
+
+            <DataGrid x:Name="DataGrid_" 
+                  Margin="247,536,209,68"
+                  Background="#CEECFF"
+                  FontSize="15"
+                  FontFamily="Segoe UI Light"
+                  Foreground="Black"
+                  ColumnWidth="*"/>
+            <Label Content="M  I  V  O  S  K  I" 
+            FontFamily="Gabriola"
+            FontSize="70"
+            HorizontalAlignment="Left" 
+            Margin="532,155,0,0" 
+            VerticalAlignment="Top" Height="147"/>
+            <Label Content="Fine jewelry, Restoration and Conservation" 
+            FontFamily="Segoe UI Light"
+            FontSize="30"
+            HorizontalAlignment="Left" 
+            Margin="447,254,0,0" 
+            VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" 
+            Text="Click the button below to access the database where you will be able to see many of our products and they prices!" 
+            FontSize="30"
+            FontFamily="Segoe UI Light"
+            TextAlignment="Center"
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Height="82"
+            Width="984" Margin="225,325,0,0"/>
+        </Grid>
+    </ScrollViewer>
 </Window>

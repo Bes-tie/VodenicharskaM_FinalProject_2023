@@ -5,46 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VodenicharskaM_FinalProject_2023"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1080" Width="1920" Background="#ECF8FF">
+        Title="MainWindow" Height="800" Width="1440" Background="#ECF8FF">
 
     <Grid>
 
         <Ellipse Fill="#CEECFF" 
                  HorizontalAlignment="Left" 
-                 Height="550" 
+                 Height="460" 
                  Margin="-160,-177,0,0" 
                  Stroke="#CEECFF" 
                  VerticalAlignment="Top" 
-                 Width="550"/>
+                 Width="460"/>
 
         <Ellipse Fill="#CEECFF" 
                  HorizontalAlignment="Left" 
                  Height="450" 
-                 Margin="1674,684,0,0" 
+                 Margin="1196,392,0,0" 
                  Stroke="#CEECFF" 
                  VerticalAlignment="Top" 
                  Width="450"/>
 
         <Ellipse Fill="#BDDFFF" 
                  HorizontalAlignment="Left" 
-                 Height="200" 
-                 Margin="1434,684,0,0" 
+                 Margin="1091,674,0,10" 
                  Stroke="#CEECFF" 
-                 VerticalAlignment="Top" 
-                 Width="200"/>
+                 Width="100"
+                 Height="100"/>
 
         <Ellipse Fill="#BDDFFF" 
                  HorizontalAlignment="Left" 
-                 Height="300" 
-                 Margin="150,870,0,0" 
+                 Height="230" 
+                 Margin="-45,609,0,0" 
                  Stroke="#CEECFF" 
                  VerticalAlignment="Top"
-                 Width="300"/>
+                 Width="230"/>
 
         <Ellipse Fill="#CEECFF" 
                  HorizontalAlignment="Left" 
                  Height="120" 
-                 Margin="1719,-22,0,0" 
+                 Margin="1249,10,0,0" 
                  Stroke="#CEECFF" 
                  VerticalAlignment="Top" 
                  Width="120"/>
@@ -52,31 +51,33 @@
         <Ellipse Fill="#CEECFF" 
                  HorizontalAlignment="Left" 
                  Height="80" 
-                 Margin="455,870,0,0" 
+                 Margin="105,489,0,0" 
                  Stroke="#CEECFF" 
                  VerticalAlignment="Top" 
                  Width="80"/>
 
         <Label Content="M I V O S K I" 
-               FontSize="200" 
+               FontSize="100" 
                FontFamily="Gabriola" 
                HorizontalAlignment="Center"
-               Margin="0,234,0,0" 
+               Margin="0,268,0,0" 
                VerticalAlignment="Top" 
                FontWeight="Bold"/>
 
         <Label Content="Fine Jewelry, Restoration &amp; Conservation" 
                FontFamily="Segoe UI Light" 
                HorizontalAlignment="Center" 
-               FontSize="75" 
-               Margin="0,532,0,0" 
+               FontSize="55" 
+               Margin="0,426,0,0" 
                VerticalAlignment="Top"/>
 
         <Button x:Name="MainCont"
                 Content="Button" 
                 Background="Transparent" 
                 Margin="0,0,0,0" 
-                Height="1080" Click="MainCont_Click"/>
+                Height="800"
+                Width="1440"
+                Click="MainCont_Click"/>
 
     </Grid>
 </Window>

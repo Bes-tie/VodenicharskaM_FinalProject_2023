@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Data;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -45,9 +47,30 @@ namespace VodenicharskaM_FinalProject_2023
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            Order win1 = new Order();
-            win1.Show();
-            this.Close();
+            string dbsCon = @"Data Source=DESKTOP-SDEJ6HG; Initial Catalog=Mivoski; Integrated Security=True";
+            SqlConnection con = new SqlConnection(dbsCon);
+
+            try
+            {
+                con.Open();
+                string query = "Select prodId,prodName, prodPrice from Products";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                DataGrid_.ItemsSource = dt.DefaultView;
+                adapter.Update(dt);
+
+                MessageBox.Show("Successful loading!");
+                con.Close();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

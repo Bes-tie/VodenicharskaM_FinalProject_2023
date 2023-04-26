@@ -82,7 +82,7 @@
                 Height="60"
                 Foreground="Black"
                 BorderBrush="{x:Null}"
-                Background="Transparent" Click="Button_Click_3"/>
+                Background="Transparent"/>
 
             <Button Content="Calendar" 
             Margin="1108,36,170,1160"
@@ -93,7 +93,7 @@
             BorderBrush="{x:Null}"
             Background="Transparent" Click="Button_Click_2"/>
 
-            <Button Content="Steps" 
+            <Button Content="Products" 
             Margin="1003,37,307,1159"
             FontFamily="Segoe UI Light"
             FontSize="20"

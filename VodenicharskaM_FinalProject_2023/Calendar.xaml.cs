@@ -45,16 +45,9 @@ namespace VodenicharskaM_FinalProject_2023
             this.Close();
         }
 
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-            Order win1 = new Order();
-            win1.Show();
-            this.Close();
-        }
-
         private void txtUser_TextChanged(object sender, TextChangedEventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source = LABSCIFIPC02\LOCALHOST; Initial Catalog=MV_FinalProject_DB; Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source = DESKTOP-SDEJ6HG; Initial Catalog=Mivoski; Integrated Security=True");
 
 
             try
@@ -94,7 +87,7 @@ namespace VodenicharskaM_FinalProject_2023
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            SqlConnection con1 = new SqlConnection(@"Data Source = LABSCIFIPC02\LOCALHOST; Initial Catalog=MV_FinalProject_DB; Integrated Security=True");
+            SqlConnection con1 = new SqlConnection(@"Data Source=DESKTOP-SDEJ6HG; Initial Catalog=Mivoski; Integrated Security=True");
 
             try
             {
@@ -106,14 +99,14 @@ namespace VodenicharskaM_FinalProject_2023
                 //data verification
                 if (con1.State == ConnectionState.Closed)
                     con1.Open();
-                string query1 = "SELECT COUNT(1) FROM SignUpTable_ Where Username=@Username and Password=@Password";
+                string query1 = "SELECT COUNT(1) FROM Customers Where username=@Username and password=@Password";
                 SqlCommand sqlCmd = new SqlCommand(query, con1);
                 sqlCmd.CommandType = CommandType.Text;
                 sqlCmd.Parameters.AddWithValue("@Username", txtUser.Text);
                 sqlCmd.Parameters.AddWithValue("@Password", pass.Password);
 
                 int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
-                if (count == 1)
+                if (count == 0)
                 {
                     MessageBox.Show("Your appointment has been successfully saved!");
                 }
